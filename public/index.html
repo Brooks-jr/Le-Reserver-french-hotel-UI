@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Meta Tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- SEO Tags -->
+	<meta name="description" content="Ui for frencg travel booking site built utilizing HTML5, CSS3, SASS, GULP, and JavaScript">
+	<meta name="keywords" content="HTML5, CSS3, JS, SASS, SCSS, Web Design, Web Development, Responsive Website, Modern Website, UI">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+
+	<!-- Font-Awesome -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+	<!-- Browser Tab's Title & Icon -->
+	<title>Le Réserver | Réserver pour vos voyages</title>
+	<link rel="shortcut icon" href="/images/favicon.ico">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/dist/fonts.css" />
+	<link rel="stylesheet" href="/dist/main.css" />
+</head>
+
+<body>
+	<div class="container">
+
+<!-- =============================================
+-            		H E A D E R
+============================================= -->
+		<header class="header">
+			<!-- LOGO -->
+			<a href="#"><img src="/dist/images/logo.png" class="logo" alt="Le Réserver Logo"></a> 
+
+			<!-- SEARCH -->
+			<form action="#" class="search">
+				<input type="text" class="search__input" placeholder="Rechercher des hôtels">
+				<button class="search__button">
+					<svg class="search__icon">
+						<use xlink:href="images/sprite.svg#icon-magnifying-glass"></use>
+					</svg>
+				</button>
+			</form>
+
+			<!-- =============
+			-	 USER-NAV
+			============== -->
+			<nav class="user-nav">
+				<!-- BOOKMARKS -->
+				<div class="user-nav__icon-box">
+					<svg class="user-nav__icon">
+						<use xlink:href="dist/images/sprite.svg#icon-bookmarks"></use>
+					</svg>
+					<span class="user-nav__notification">3</span>
+				</div>
+
+				<!-- MESSAGES -->
+				<div class="user-nav__icon-box">
+					<svg class="user-nav__icon">
+						<use xlink:href="dist/images/sprite.svg#icon-chat"></use>
+					</svg>
+					<span class="user-nav__notification">7</span>
+				</div>
+
+				<!-- USER -->
+				<div class="user-nav__user">
+					<img src="/dist/images/user.jpg" alt="Photo d'utilisateur" class="user-nav__user-image">
+					<span class="user-nav__user-name">Adèle</span>
+				</div>
+
+			</nav>
+		</header>
+<!-- =============================================
+-            		M A I N
+============================================= -->
+		<div class="content">
+			<!-- =============
+			-	 SIDE-NAV
+			============== -->
+			<nav class="sidebar">
+				<ul class="side-nav">
+					<!-- hotel -->
+					<li class="side-nav__item side-nav__item--active">
+						<a href="#" class="side-nav__link">
+							<svg class="side-nav__icon">
+								<use xlink:href="dist/images/sprite.svg#icon-home"></use>
+							</svg>
+							<span>Un Hôtel</span>
+						</a>
+					</li>
+
+					<!-- flight -->
+					<li class="side-nav__item">
+						<a href="#" class="side-nav__link">
+							<svg class="side-nav__icon">
+								<use xlink:href="dist/images/sprite.svg#icon-aircraft"></use>
+							</svg>
+							<span>plan de vol</span>
+						</a>
+					</li>
+
+					<!-- car rental -->
+					<li class="side-nav__item">
+						<a href="#" class="side-nav__link">
+							<svg class="side-nav__icon">
+								<use xlink:href="dist/images/sprite.svg#icon-key"></use>
+							</svg>
+							<span>véhicule</span>
+						</a>
+					</li>
+
+					<!-- tours -->
+					<li class="side-nav__item">
+						<a href="#" class="side-nav__link">
+							<svg class="side-nav__icon">
+								<use xlink:href="dist/images/sprite.svg#icon-map"></use>
+							</svg>
+							<span>Grandes Visites</span>
+						</a>
+					</li>
+				</ul>
+
+				<!-- copyright -->
+				<div class="copyright">
+					&copy; 2018 par Le Réserver. Tous les droits sont réservés
+				</div>
+			</nav>
+
+			<!-- =============
+			-	   BODY
+			============== -->
+			<main class="hotel-details">
+				<!-- images -->
+				<div class="gallery">
+					<!-- 1 -->
+					<figure class="gallery__item">
+						<img src="dist/images/hotel-1.jpg" alt="Image de l'hôtel 1" class="gallery__image">
+						<div class="gallery__overlay">
+							<h3 class="gallery__overlay-text">Hall de l'hôtel</h3>
+						</div>
+					</figure>
+
+					<!-- 2 -->
+					<figure class="gallery__item">
+						<img src="dist/images/hotel-2.jpg" alt="Image de l'hôtel 2" class="gallery__image">
+						<div class="gallery__overlay">
+							<h3 class="gallery__overlay-text">Expertise garantie</h3>
+						</div>
+					</figure>
+
+					<!-- 3 -->
+					<figure class="gallery__item">
+						<img src="dist/images/hotel-3.jpg" alt="Image de l'hôtel 3" class="gallery__image">
+						<div class="gallery__overlay">
+							<h3 class="gallery__overlay-text">Luxe historique</h3>
+						</div>
+					</figure>
+				</div>
+
+				<!-- overview -->
+				<div class="overview">
+					<h1 class="overview__heading">
+						Hôtel Lothair
+					</h1>
+
+					<!-- stars -->
+					<div class="overview__stars">
+						<svg class="overview__icon-star">
+							<use xlink:href="dist/images/sprite.svg#icon-star"></use>
+						</svg>
+						<svg class="overview__icon-star">
+							<use xlink:href="dist/images/sprite.svg#icon-star"></use>
+						</svg>
+						<svg class="overview__icon-star">
+							<use xlink:href="dist/images/sprite.svg#icon-star"></use>
+						</svg>
+						<svg class="overview__icon-star">
+							<use xlink:href="dist/images/sprite.svg#icon-star"></use>
+						</svg>
+						<svg class="overview__icon-star">
+							<use xlink:href="dist/images/sprite.svg#icon-star"></use>
+						</svg>
+					</div>
+
+					<!-- location -->
+					<div class="overview__location">
+						<svg class="overview__icon-location">
+							<use xlink:href="dist/images/sprite.svg#icon-location"></use>
+						</svg>
+						<button class="button-link">Lille, France</button>
+					</div>
+
+					<!-- rating -->
+					<div class="overview__rating">
+						<div class="overview__rating-average">9.3</div>
+						<div class="overview__rating-count">1146 Critiques</div>
+					</div>
+				</div>
+
+				<div class="detail">
+					<!-- hotel description -->
+					<div class="description">
+						<!-- 1 -->
+						<p class="paragraph">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores in facere corrupti et hic non eius, repudiandae velit
+							sapiente delectus esse voluptatum eum quos dicta optio quis praesentium iure facilis.
+						</p>
+
+						<!-- 2 -->
+						<p class="paragraph">
+							Suscipit quae in distinctio dolore velit blanditiis maiores iste harum error laudantium, minus culpa nihil possimus reiciendis
+							saepe.
+						</p>
+
+						<!-- list -->
+						<ul class="list">
+							<li class="list__item">Centre culturel et historique</li>
+							<li class="list__item">Petit déjeuner tous les matins</li>
+							<li class="list__item">Navette gratuite pour l'aéroport</li>
+							<li class="list__item">Wifi gratuit dans les chambres</li>
+							<li class="list__item">Climatisation et chauffage</li>
+							<li class="list__item">Animaux acceptés</li>
+							<li class="list__item">Équipe multilingue</li>
+							<li class="list__item">Nuit et luxe</li>
+						</ul>
+
+						<!-- recommend -->
+						<div class="recommend">
+
+							<!-- count -->
+							<p class="recommend__count">
+								Seignour et 3 autres amis recommandent cet hôtel.
+							</p>
+
+							<!-- images -->
+							<div class="recommend__friends">
+								<img src="dist/images/user-3.jpg" alt="Photo de profil d'ami" class="recommend__image">
+								<img src="dist/images/user-4.jpg" alt="Photo de profil d'ami" class="recommend__image">
+								<img src="dist/images/user-5.jpg" alt="Photo de profil d'ami" class="recommend__image">
+								<img src="dist/images/user-6.jpg" alt="Photo de profil d'ami" class="recommend__image">
+							</div>
+						</div>
+					</div>
+
+					<!-- user reviews -->
+					<div class="user-reviews">
+						<!-- 1 -->
+						<figure class="review">
+							<blockquote class="review__text">
+								Reiciendis nostrum dicta eveniet cupiditate recusandae iusto deserunt quidem, sed, ab neque aspernatur aperiam eius pariatur
+								omnis rem.
+							</blockquote>
+							<figcaption class="review__user">
+								<img src="dist/images/user-1.jpg" alt="Image de l'utilisateur" class="review__image">
+								<div class="review__user-wrap">
+									<p class="review__user-name">Babette Antoine</p>
+									<p class="review__user-date">4 Avril, 2018</p>
+								</div>
+								<div class="review__rating">9.1</div>
+							</figcaption>
+						</figure>
+
+						<!-- 2 -->
+						<figure class="review">
+							<blockquote class="review__text">
+								Illum reprehenderit. Repudiandae, non in laboriosam commodi maiores necessitatibus eum quibusdam.
+							</blockquote>
+							<figcaption class="review__user">
+								<img src="dist/images/user-2.jpg" alt="Image de l'utilisateur" class="review__image">
+								<div class="review__user-wrap">
+									<p class="review__user-name">Zdenek Belmont</p>
+									<p class="review__user-date">21 Mars, 2018</p>
+								</div>
+								<div class="review__rating">8.7</div>
+							</figcaption>
+						</figure>
+
+						<!-- show all -->
+						<button class="button-link">Montre Tout
+							<span>&rsaquo;</span>
+						</button>
+					</div>
+				</div>
+
+				<!-- call to action -->
+				<div class="cta">
+					<h2 class="cta__book-now">Nous avons 4 chambres disponibles pour vos dates sélectionnées!</h2>
+					<button class="button">
+						<span class="button__visible">Réservez maintenant!</span>
+						<span class="button__hidden">4 chambres disponibles</span>
+					</button>
+				</div>
+
+			</main>
+		</div>
+	</div>
+</body>
+
+</html>

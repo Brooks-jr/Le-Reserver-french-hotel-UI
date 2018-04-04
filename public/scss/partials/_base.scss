@@ -1,0 +1,80 @@
+
+// ===========================================
+//              CSS VARIABLES
+// ===========================================
+:root {
+    // <-- COLORS -->
+    --primary-color: #14162F;
+    --secondary-color: #DBB13B;
+    --tertiary-color: #dc143c;
+
+    --primary-color-alpha: rgba(20, 22, 47, 0.7);
+    --primary-color-alpha-2: rgba(20, 22, 47, 0.1);
+    
+    --secondary-color-alpha: rgba(219, 176, 59, 0.7);
+    --secondary-color-alpha-2: rgba(219, 176, 59, 0.1);
+    
+    --grey-1: #faf9f9;
+    --grey-2: #f4f2f2;
+    --grey-3: #f0eeee;
+    --grey-4: #ccc;
+    --grey-5: #999;
+    --grey-6: #777;
+    --grey-7: #333;
+
+    --shadow-0: 0 2rem 5rem rgba(0,0,0,.065);
+    --shadow-1: 0 2rem 6rem rgba(0,0,0,.3);
+    
+    --underline: 1px solid var(--grey-2);
+
+    // <-- FONTS -->
+    --header-font: 'PT Serif', serif;
+}
+
+// ===========================================
+//           R E S P O N S I V E
+// ===========================================  
+$breakpoint-max: 75em;          // 1200px
+$breakpoint-large: 68.75em;     // 1100px
+$breakpoint-medium: 56.25em;    // 900px
+$breakpoint-small: 37.5em;      // 600px
+$breakpoint-min: 31.25em;       // 500px
+
+
+
+// ===========================================
+//              G E N E R A L
+// ===========================================
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media only screen and (max-width: $breakpoint-large) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    background-image: url(../dist/images/bg-body.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: var(--grey-6);
+}
